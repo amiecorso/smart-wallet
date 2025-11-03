@@ -19,3 +19,5 @@
 [submodule "lib/safe-singleton-deployer-sol"]
 	path = lib/safe-singleton-deployer-sol
 	url = https://github.com/wilsoncusack/safe-singleton-deployer-sol
+[submodule "webauthn-sol"]
+	url = https://github.com/amiecorso/webauthn-sol
