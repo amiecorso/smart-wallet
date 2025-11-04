@@ -338,7 +338,7 @@ contract CoinbaseSmartWallet is ERC1271, IAccount, MultiOwnable, UUPSUpgradeable
 
             WebAuthn.WebAuthnAuth memory auth = abi.decode(sigWrapper.signatureData, (WebAuthn.WebAuthnAuth));
 
-            return WebAuthn.verifySim({challenge: abi.encode(hash), requireUV: false, webAuthnAuth: auth, x: x, y: y});
+            return WebAuthn.verifySim(abi.encode(hash), false, auth, x, y);
         }
 
         revert InvalidOwnerBytesLength(ownerBytes);
