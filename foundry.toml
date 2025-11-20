@@ -9,7 +9,17 @@ optimizer_runs = 999999
 via_ir = true
 evm_version = "prague"
 solc_version = "0.8.23"
+fs_permissions = [
+  { access = "read", path = "./snapshots/OnchainBytecode" },
+  { access = "read", path = "./snapshots/SimulationOverrides" }
+]
 
 [fmt]
 sort_imports = true
 wrap_comments = true
+
+# Allow tests to read snapshot bytecode files
+fs_permissions = [
+  { access = "read", path = "./snapshots/OnchainBytecode" },
+  { access = "read", path = "./snapshots/SimulationOverrides" }
+]

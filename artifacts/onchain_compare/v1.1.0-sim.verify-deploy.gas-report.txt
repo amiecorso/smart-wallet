@@ -1,0 +1,49 @@
+Compiler run failed:
+Error (1227): Index range access is only supported for dynamic calldata arrays.
+  --> test/gas/Verify_v06.t.sol:98:33:
+   |
+98 |             sender = abi.decode(ret[4:], (address));
+   |                                 ^^^^^^^
+
+Error (1956): The first argument to "abi.decode" must be implicitly convertible to bytes memory or bytes calldata, but is of type bytes memory slice.
+  --> test/gas/Verify_v06.t.sol:98:33:
+   |
+98 |             sender = abi.decode(ret[4:], (address));
+   |                                 ^^^^^^^
+
+Error (1227): Index range access is only supported for dynamic calldata arrays.
+   --> test/gas/Verify_v06.t.sol:102:37:
+    |
+102 |                 sender = abi.decode(ret[ret.length - 32:], (address));
+    |                                     ^^^^^^^^^^^^^^^^^^^^^
+
+Error (1956): The first argument to "abi.decode" must be implicitly convertible to bytes memory or bytes calldata, but is of type bytes memory slice.
+   --> test/gas/Verify_v06.t.sol:102:37:
+    |
+102 |                 sender = abi.decode(ret[ret.length - 32:], (address));
+    |                                     ^^^^^^^^^^^^^^^^^^^^^
+
+Error (1227): Index range access is only supported for dynamic calldata arrays.
+   --> test/gas/Verify_v06.t.sol:117:62:
+    |
+117 |             (preOpGas, paid,, , targetSuccess,) = abi.decode(ret[4:], (uint256, uint256, uint48, uint48, bool, bytes));
+    |                                                              ^^^^^^^
+
+Error (1956): The first argument to "abi.decode" must be implicitly convertible to bytes memory or bytes calldata, but is of type bytes memory slice.
+   --> test/gas/Verify_v06.t.sol:117:62:
+    |
+117 |             (preOpGas, paid,, , targetSuccess,) = abi.decode(ret[4:], (uint256, uint256, uint48, uint48, bool, bytes));
+    |                                                              ^^^^^^^
+
+Error (1227): Index range access is only supported for dynamic calldata arrays.
+   --> test/gas/Verify_v06.t.sol:120:62:
+    |
+120 |             (preOpGas, paid,, , targetSuccess,) = abi.decode(ret[4:], (uint256, uint256, uint48, uint48, bool, bytes));
+    |                                                              ^^^^^^^
+
+Error (1956): The first argument to "abi.decode" must be implicitly convertible to bytes memory or bytes calldata, but is of type bytes memory slice.
+   --> test/gas/Verify_v06.t.sol:120:62:
+    |
+120 |             (preOpGas, paid,, , targetSuccess,) = abi.decode(ret[4:], (uint256, uint256, uint48, uint48, bool, bytes));
+    |                                                              ^^^^^^^
+

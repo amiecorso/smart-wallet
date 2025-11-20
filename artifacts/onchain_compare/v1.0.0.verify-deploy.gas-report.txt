@@ -1,0 +1,28 @@
+No files changed, compilation skipped
+
+Ran 1 test for test/gas/Verify_v06.t.sol:Verify_v06
+[FAIL: predict sender failed] test_verificationGas_firstDeploy_simAndHandleOps() (gas: 27663)
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 107.46ms (93.21µs CPU time)
+
+╭-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------╮
+| test/mocks/MockCoinbaseSmartWallet.sol:MockCoinbaseSmartWallet Contract |                 |        |        |        |         |
++================================================================================================================================+
+| Deployment Cost                                                         | Deployment Size |        |        |        |         |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| 2631451                                                                 | 12967           |        |        |        |         |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+|                                                                         |                 |        |        |        |         |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| Function Name                                                           | Min             | Avg    | Median | Max    | # Calls |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| initialize                                                              | 191016          | 191016 | 191016 | 191016 | 1       |
+╰-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------╯
+
+
+Ran 1 test suite in 107.88ms (107.46ms CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/gas/Verify_v06.t.sol:Verify_v06
+[FAIL: predict sender failed] test_verificationGas_firstDeploy_simAndHandleOps() (gas: 27663)
+
+Encountered a total of 1 failing tests, 0 tests succeeded

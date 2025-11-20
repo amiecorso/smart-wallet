@@ -1,0 +1,19 @@
+No files changed, compilation skipped
+
+Ran 1 test for test/gas/Verify_v06.t.sol:Verify_v06
+[PASS] test_verificationGas_firstDeploy_simAndHandleOps() (gas: 104468)
+Logs:
+  etched factory runtime at: 0xf000000000000000000000000000000000000002
+  factory code length: 1668
+  factory.implementation(): 0x000100abaad02f1cfC8Bbe32bD5a564817339E72
+  etched impl runtime at: 0x000100abaad02f1cfC8Bbe32bD5a564817339E72
+  impl code length: 16528
+  predicted sender: 0x7c8d4e26946A5e055d31a00D5D6FB27762897134
+  predicted sender code (before): 0
+  simulateHandleOp preOpGas (first-deploy): 0
+  handleOps revert (first-deploy), bytes:
+  0x
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 59.76ms (319.67µs CPU time)
+
+Ran 1 test suite in 60.48ms (59.76ms CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)

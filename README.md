@@ -5,6 +5,7 @@
 - **Purpose**: Provide simulation-only wallet bytecode that mimics the onchain “valid signature” verification path, so bundlers can estimate Verification Gas Limit (VGL) accurately without manual buffers.
 - **Why**: Gas estimation in simulation usually uses invalid passkey signatures against the production wallet bytecode. Invalid signatures trigger different execution paths than real valid signatures onchain (e.g., falling back to FCL instead of using RIP-7212), leading to large deviations in measured gas. This branch supplies bytecode that fakes the “valid signature” path by hard-coding a known‑valid P‑256 vector inside the verifier, ensuring simulation follows the same path as real execution and yields sufficiently accurate VGL for bundler overrides.
 - **Scope**: Simulation-only. Not intended for deployment. This branch will not be merged.
+- **Affected Versions**: As of writing, CoinbaseSmartWallet v1.0.0 (`0x000100abaad02f1cfC8Bbe32bD5a564817339E72`) and v1.1.0 (`0x00000110dCdEdC9581cb5eCB8467282f2926534d`) do not naturally produce accurate VGL estimations.
 
 ### What changed (high level)
 - `CoinbaseSmartWallet._isValidSignature` calls `WebAuthn.verifySim`, whose internal signature check uses a fixed valid vector to exercise the RIP-7212 precompile path when available (and FCL fallback otherwise). This produces gas that matches real executions when a valid passkey signature is used onchain.

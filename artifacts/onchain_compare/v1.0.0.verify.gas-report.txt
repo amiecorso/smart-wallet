@@ -1,0 +1,34 @@
+Compiling 1 files with Solc 0.8.23
+Solc 0.8.23 finished in 20.52s
+Compiler run successful with warnings:
+Warning (2018): Function state mutability can be restricted to pure
+   --> lib/webauthn-sol/src/WebAuthn.sol:176:5:
+    |
+176 |     function verifySim(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Ran 1 test for test/gas/Verify_v06.t.sol:Verify_v06
+[PASS] test_verificationGas_deployed_simAndHandleOps() (gas: 238232)
+Logs:
+  simulateHandleOp preOpGas (deployed): 43106
+  handleOps gas (deployed): 116452
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 92.22ms (1.09ms CPU time)
+
+╭-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------╮
+| test/mocks/MockCoinbaseSmartWallet.sol:MockCoinbaseSmartWallet Contract |                 |        |        |        |         |
++================================================================================================================================+
+| Deployment Cost                                                         | Deployment Size |        |        |        |         |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| 2631451                                                                 | 12967           |        |        |        |         |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+|                                                                         |                 |        |        |        |         |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| Function Name                                                           | Min             | Avg    | Median | Max    | # Calls |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| initialize                                                              | 191016          | 191016 | 191016 | 191016 | 1       |
+╰-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------╯
+
+
+Ran 1 test suite in 93.50ms (92.22ms CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)

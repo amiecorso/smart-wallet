@@ -1,0 +1,347 @@
+No files changed, compilation skipped
+
+Ran 3 tests for test/MultiOwnable/Initialize.t.sol:MultiOwnableInitializeTest
+[PASS] testRevertsIfLength32ButLargerThanAddress() (gas: 102620)
+[PASS] testRevertsIfLength32NotAddress() (gas: 103171)
+[PASS] testRevertsIfLengthNot32Or64() (gas: 125850)
+Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 751.83µs (516.08µs CPU time)
+
+Ran 2 tests for test/ERC1271.t.sol:ERC1271Test
+[PASS] test_returnsExpectedDomainHashWhenProxy() (gas: 24148)
+[PASS] test_static() (gas: 3044773)
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 1.13ms (498.08µs CPU time)
+
+Ran 5 tests for test/CoinbaseSmartWallet/ExecuteWithoutChainIdValidation.t.sol:TestExecuteWithoutChainIdValidation
+[PASS] test_reverts_whenCallerNotEntryPoint() (gas: 32535)
+[PASS] test_reverts_whenOneCallReverts() (gas: 493426)
+[PASS] test_reverts_whenOneSelectorNotApproved() (gas: 217944)
+[PASS] test_reverts_whenSelectorNotApproved() (gas: 131195)
+[PASS] test_succeeds_whenSelectorAllowed() (gas: 462011)
+Suite result: ok. 5 passed; 0 failed; 0 skipped; finished in 1.59ms (819.42µs CPU time)
+
+Ran 2 tests for test/ERC1271InputGenerator.t.sol:CoinbaseSmartWallet1271InputGeneratorTest
+[PASS] testGetReplaySafeHashForDeployedAccount() (gas: 411596)
+[PASS] testGetReplaySafeHashForUndeployedAccount() (gas: 377301)
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 442.96µs (236.00µs CPU time)
+
+Ran 1 test for test/CoinbaseSmartWallet/UpgradeToAndCall.t.sol:TestUpgradeToAndCall
+[PASS] testUpgradeToAndCall() (gas: 72774)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 1.84ms (41.75µs CPU time)
+
+Ran 6 tests for test/MultiOwnable/AddOwnerAddress.t.sol:AddOwnerAddressTest
+[PASS] testEmitsAddOwner() (gas: 119699)
+[PASS] testIncreasesOwnerIndex() (gas: 117799)
+[PASS] testRevertsIfAlreadyOwner() (gas: 143588)
+[PASS] testRevertsIfCalledByNonOwner() (gas: 33097)
+[PASS] testSetsIsOwner() (gas: 113332)
+[PASS] testSetsOwnerAtIndex() (gas: 124601)
+Suite result: ok. 6 passed; 0 failed; 0 skipped; finished in 2.25ms (2.02ms CPU time)
+
+Ran 1 test for test/CoinbaseSmartWallet/Implementation.t.sol:TestImplementation
+[PASS] testImplementation() (gas: 12686)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 701.42µs (12.75µs CPU time)
+
+Ran 2 tests for test/CoinbaseSmartWallet/Initialize.t.sol:TestInitialize
+[PASS] testInitialize() (gas: 21157)
+[PASS] test_cannotInitImplementation() (gas: 2682884)
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 1.74ms (354.38µs CPU time)
+
+Ran 2 tests for test/CoinbaseSmartWallet/CanSkipChainIdValidation.t.sol:TestCanSkipChainIdValidation
+[PASS] test_approvedSelectorsReturnTrue() (gas: 24669)
+[PASS] test_otherSelectorsReturnFalse() (gas: 14225)
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 2.76ms (88.54µs CPU time)
+
+Ran 2 tests for test/CoinbaseSmartWallet/Execute.t.sol:TestExecuteWithoutChainIdValidation
+[PASS] testExecute() (gas: 668624)
+[PASS] test_revertsWithReservedNonce() (gas: 111564)
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 3.07ms (1.90ms CPU time)
+
+Ran 4 tests for test/gas/EndToEnd.t.sol:EndToEndTest
+[PASS] test_transfer_erc20_baseAccount() (gas: 392372)
+Logs:
+  test_transfer_erc20 Base Account calldata size: 1092
+  test_transfer_erc20 Base Account gas: 137830
+
+[PASS] test_transfer_erc20_eoa() (gas: 107898)
+Logs:
+  test_transfer_erc20 EOA calldata size: 68
+  test_transfer_erc20 EOA gas: 38830
+
+[PASS] test_transfer_native_baseAccount() (gas: 281157)
+Logs:
+  test_transfer_native Base Account calldata size: 996
+  test_transfer_native Base Account gas: 130878
+
+[PASS] test_transfer_native_eoa() (gas: 22429)
+Logs:
+  test_transfer_native EOA calldata size: 0
+  test_transfer_native EOA gas: 9330
+
+Suite result: ok. 4 passed; 0 failed; 0 skipped; finished in 6.84ms (4.30ms CPU time)
+
+Ran 7 tests for test/MultiOwnable/RemoveLastOwner.t.sol:RemoveLastOwnerTest
+[PASS] test_emitsRemoveOwner() (gas: 59798)
+[PASS] test_removesOwner() (gas: 60653)
+[PASS] test_removesOwnerAtIndex() (gas: 63953)
+[PASS] test_revert_whenCalledByNonOwner(address) (runs: 256, μ: 40896, ~: 40896)
+[PASS] test_revert_whenNoOwnerAtIndex() (gas: 69771)
+[PASS] test_revert_whenWrongOwnerAtIndex() (gas: 55679)
+[PASS] test_reverts_whenNotLastOwner() (gas: 170081)
+Suite result: ok. 7 passed; 0 failed; 0 skipped; finished in 13.26ms (13.33ms CPU time)
+
+Ran 6 tests for test/MultiOwnable/AddOwnerPublicKey.t.sol:AddOwnerPublicKeyTest
+[PASS] testEmitsAddOwner() (gas: 142894)
+[PASS] testFuzzIsOwnerPublicKey(bytes32,bytes32) (runs: 256, μ: 140328, ~: 140562)
+[PASS] testRevertsIfAlreadyOwner() (gas: 166906)
+[PASS] testRevertsIfCalledByNonOwner() (gas: 33286)
+[PASS] testSetsIsOwner() (gas: 136571)
+[PASS] testSetsOwnerAtIndex() (gas: 149920)
+Suite result: ok. 6 passed; 0 failed; 0 skipped; finished in 25.84ms (25.68ms CPU time)
+
+Ran 10 tests for test/CoinbaseSmartWallet/IsValidSignature.t.sol:TestIsValidSignature
+[PASS] testInvalidPasskeySignatureStillSucceedsWithVerifySim() (gas: 44175)
+[PASS] testReturnsInvalidIfPasskeySigButWrongOwnerLength() (gas: 42566)
+[PASS] testRevertsIfEthereumSignatureButWrongOwnerLength() (gas: 26295)
+[PASS] testRevertsIfOwnerIsInvalidEthereumAddress() (gas: 26040)
+[PASS] testSmartWalletSigner() (gas: 3020779)
+[PASS] testValidateSignatureWithEOASigner() (gas: 25093)
+[PASS] testValidateSignatureWithEOASignerFailsWithWrongSigner() (gas: 23826)
+[PASS] testValidateSignatureWithPasskeySigner() (gas: 49536)
+[PASS] testValidateSignatureWithPasskeySignerFailsBadOwnerIndex() (gas: 37946)
+[PASS] testValidateSignatureWithPasskeySignerInvalidSigNowSucceedsWithVerifySim() (gas: 49629)
+Suite result: ok. 10 passed; 0 failed; 0 skipped; finished in 27.93ms (5.00ms CPU time)
+
+Ran 7 tests for test/MultiOwnable/RemoveOwnerAtIndex.t.sol:RemoveOwnerAtIndexTest
+[PASS] test_emitsRemoveOwner() (gas: 67336)
+[PASS] test_removesOwner() (gas: 67996)
+[PASS] test_removesOwnerAtIndex() (gas: 71041)
+[PASS] test_revert_whenCalledByNonOwner(address) (runs: 256, μ: 40902, ~: 40902)
+[PASS] test_revert_whenNoOwnerAtIndex() (gas: 55579)
+[PASS] test_revert_whenWrongOwnerAtIndex() (gas: 58252)
+[PASS] test_reverts_ifIsLastOwner() (gas: 16704757)
+Suite result: ok. 7 passed; 0 failed; 0 skipped; finished in 30.00ms (37.93ms CPU time)
+
+Ran 6 tests for test/CoinbaseSmartWallet/ValidateUserOp.t.sol:TestValidateUserOp
+[PASS] test_reverts_whenReplayableNonceKeyInvalidForSelector() (gas: 48616)
+[PASS] test_reverts_whenSelectorInvalidForReplayableNonceKey() (gas: 42369)
+[PASS] test_reverts_whenUpgradeToImplementationWithNoCode(address) (runs: 256, μ: 57091, ~: 57317)
+[PASS] test_succeedsWithEOASigner() (gas: 644243)
+[PASS] test_succeedsWithPasskeySigner() (gas: 541549)
+[PASS] test_succeeds_whenUpgradeToImplementationWithCode() (gas: 2728759)
+Suite result: ok. 6 passed; 0 failed; 0 skipped; finished in 30.00ms (32.97ms CPU time)
+
+Ran 12 tests for test/CoinbaseSmartWalletFactory.t.sol:CoinbaseSmartWalletFactoryTest
+[PASS] testDeployDeterministicPassValues() (gas: 292901)
+[PASS] test_CreateAccount_ReturnsPredeterminedAddress_WhenAccountAlreadyExists() (gas: 353449)
+[PASS] test_RevertsIfLength32ButLargerThanAddress() (gas: 326310)
+[PASS] test_constructor_revertsIfImplementationIsNotDeployed(address) (runs: 256, μ: 132174, ~: 132419)
+[PASS] test_constructor_setsImplementation(address) (runs: 256, μ: 528571, ~: 528656)
+[PASS] test_createAccountDeploysToPredeterminedAddress() (gas: 304202)
+[PASS] test_createAccountSetsOwnersCorrectly() (gas: 328910)
+[PASS] test_createAccount_emitsAccountCreatedEvent(uint256) (runs: 256, μ: 307849, ~: 307781)
+[PASS] test_exitIfAccountIsAlreadyInitialized() (gas: 318553)
+[PASS] test_implementation_returnsExpectedAddress() (gas: 7709)
+[PASS] test_initCodeHash() (gas: 7931)
+[PASS] test_revertsIfNoOwners() (gas: 46698)
+Suite result: ok. 12 passed; 0 failed; 0 skipped; finished in 63.32ms (110.97ms CPU time)
+
+Ran 3 tests for test/CoinbaseSmartWallet/ExecuteBatch.t.sol:TestExecuteWithoutChainIdValidation
+[PASS] testExecuteBatch() (gas: 1148300)
+[PASS] testExecuteBatch(uint256) (runs: 256, μ: 3719855, ~: 3496226)
+[PASS] test__codesize() (gas: 54593)
+Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 72.93ms (72.38ms CPU time)
+
+╭--------------------------------------------------------------+-----------------+-------+--------+-------+---------╮
+| lib/solady/test/utils/mocks/MockERC20.sol:MockERC20 Contract |                 |       |        |       |         |
++===================================================================================================================+
+| Deployment Cost                                              | Deployment Size |       |        |       |         |
+|--------------------------------------------------------------+-----------------+-------+--------+-------+---------|
+| 947958                                                       | 4929            |       |        |       |         |
+|--------------------------------------------------------------+-----------------+-------+--------+-------+---------|
+|                                                              |                 |       |        |       |         |
+|--------------------------------------------------------------+-----------------+-------+--------+-------+---------|
+| Function Name                                                | Min             | Avg   | Median | Max   | # Calls |
+|--------------------------------------------------------------+-----------------+-------+--------+-------+---------|
+| mint                                                         | 50703           | 57658 | 50739  | 68055 | 10      |
+|--------------------------------------------------------------+-----------------+-------+--------+-------+---------|
+| transfer                                                     | 33810           | 33810 | 33810  | 33810 | 1       |
+╰--------------------------------------------------------------+-----------------+-------+--------+-------+---------╯
+
+╭-------------------------------------------------------+-----------------+------+--------+------+---------╮
+| lib/webauthn-sol/src/../test/Utils.sol:Utils Contract |                 |      |        |      |         |
++==========================================================================================================+
+| Deployment Cost                                       | Deployment Size |      |        |      |         |
+|-------------------------------------------------------+-----------------+------+--------+------+---------|
+| 398252                                                | 2020            |      |        |      |         |
+|-------------------------------------------------------+-----------------+------+--------+------+---------|
+|                                                       |                 |      |        |      |         |
+|-------------------------------------------------------+-----------------+------+--------+------+---------|
+| Function Name                                         | Min             | Avg  | Median | Max  | # Calls |
+|-------------------------------------------------------+-----------------+------+--------+------+---------|
+| getWebAuthnStruct                                     | 7617            | 7617 | 7617   | 7617 | 6       |
+|-------------------------------------------------------+-----------------+------+--------+------+---------|
+| normalizeS                                            | 222             | 222  | 222    | 222  | 5       |
+╰-------------------------------------------------------+-----------------+------+--------+------+---------╯
+
+╭----------------------------------------------------------+-----------------+--------+--------+--------+---------╮
+| src/CoinbaseSmartWallet.sol:CoinbaseSmartWallet Contract |                 |        |        |        |         |
++=================================================================================================================+
+| Deployment Cost                                          | Deployment Size |        |        |        |         |
+|----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| 2597830                                                  | 12710           |        |        |        |         |
+|----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+|                                                          |                 |        |        |        |         |
+|----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| Function Name                                            | Min             | Avg    | Median | Max    | # Calls |
+|----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| domainSeparator                                          | 1362            | 1362   | 1362   | 1362   | 1       |
+|----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| eip712Domain                                             | 1419            | 1419   | 1419   | 1419   | 1       |
+|----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| execute                                                  | 10573           | 13541  | 13541  | 16509  | 2       |
+|----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| implementation                                           | 549             | 549    | 549    | 549    | 1       |
+|----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| initialize                                               | 26740           | 162874 | 164841 | 187433 | 273     |
+|----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| isOwnerAddress                                           | 3183            | 3183   | 3183   | 3183   | 2       |
+|----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| receive                                                  | 62              | 62     | 62     | 62     | 1       |
+|----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| replaySafeHash                                           | 1718            | 1718   | 1718   | 1718   | 4       |
+|----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| upgradeToAndCall                                         | 11139           | 11139  | 11139  | 11139  | 1       |
+|----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| validateUserOp                                           | 10152           | 10152  | 10152  | 10152  | 2       |
+╰----------------------------------------------------------+-----------------+--------+--------+--------+---------╯
+
+╭------------------------------------------------------------------------+-----------------+--------+--------+--------+---------╮
+| src/CoinbaseSmartWalletFactory.sol:CoinbaseSmartWalletFactory Contract |                 |        |        |        |         |
++===============================================================================================================================+
+| Deployment Cost                                                        | Deployment Size |        |        |        |         |
+|------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| 447364                                                                 | 2013            |        |        |        |         |
+|------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+|                                                                        |                 |        |        |        |         |
+|------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| Function Name                                                          | Min             | Avg    | Median | Max    | # Calls |
+|------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| createAccount                                                          | 22150           | 262460 | 266201 | 290140 | 274     |
+|------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| getAddress                                                             | 1312            | 1651   | 1653   | 1653   | 260     |
+|------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| implementation                                                         | 205             | 205    | 205    | 205    | 257     |
+|------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| initCodeHash                                                           | 359             | 359    | 359    | 359    | 1       |
+╰------------------------------------------------------------------------+-----------------+--------+--------+--------+---------╯
+
+╭----------------------------------------------------------------+-----------------+-----+--------+-----+---------╮
+| test/CoinbaseSmartWallet/UpgradeToAndCall.t.sol:Dummy Contract |                 |     |        |     |         |
++=================================================================================================================+
+| Deployment Cost                                                | Deployment Size |     |        |     |         |
+|----------------------------------------------------------------+-----------------+-----+--------+-----+---------|
+| 195526                                                         | 706             |     |        |     |         |
+|----------------------------------------------------------------+-----------------+-----+--------+-----+---------|
+|                                                                |                 |     |        |     |         |
+|----------------------------------------------------------------+-----------------+-----+--------+-----+---------|
+| Function Name                                                  | Min             | Avg | Median | Max | # Calls |
+|----------------------------------------------------------------+-----------------+-----+--------+-----+---------|
+| dummy                                                          | 879             | 879 | 879    | 879 | 2       |
+|----------------------------------------------------------------+-----------------+-----+--------+-----+---------|
+| proxiableUUID                                                  | 207             | 207 | 207    | 207 | 1       |
+╰----------------------------------------------------------------+-----------------+-----+--------+-----+---------╯
+
+╭-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------╮
+| test/mocks/MockCoinbaseSmartWallet.sol:MockCoinbaseSmartWallet Contract |                 |        |        |        |         |
++================================================================================================================================+
+| Deployment Cost                                                         | Deployment Size |        |        |        |         |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| 2631451                                                                 | 12967           |        |        |        |         |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+|                                                                         |                 |        |        |        |         |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| Function Name                                                           | Min             | Avg    | Median | Max    | # Calls |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| REPLAYABLE_NONCE_KEY                                                    | 528             | 528    | 528    | 528    | 265     |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| addOwnerAddress                                                         | 99246           | 99246  | 99246  | 99246  | 259     |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| canSkipChainIdValidation                                                | 782             | 843    | 847    | 885    | 12      |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| entryPoint                                                              | 638             | 638    | 638    | 638    | 263     |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| execute                                                                 | 25797           | 41059  | 36353  | 61029  | 3       |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| executeBatch((address,uint256,bytes)[])                                 | 24462           | 85275  | 98972  | 224498 | 125     |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| executeBatch(uint256,(address,uint256,bytes)[])                         | 24748           | 87611  | 62366  | 313267 | 133     |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| executeWithoutChainIdValidation                                         | 21837           | 43911  | 24415  | 104979 | 4       |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| getUserOpHashWithoutChainId                                             | 2080            | 2080   | 2080   | 2080   | 1       |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| initialize                                                              | 191016          | 191261 | 191016 | 262090 | 290     |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| isOwnerAddress                                                          | 3205            | 3205   | 3205   | 3205   | 5       |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| isOwnerBytes                                                            | 3116            | 3116   | 3116   | 3116   | 1       |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| isValidSignature                                                        | 5080            | 12771  | 10545  | 20796  | 11      |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| replaySafeHash                                                          | 1740            | 1740   | 1740   | 1740   | 10      |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| validateUserOp                                                          | 28300           | 33375  | 33570  | 44734  | 260     |
+╰-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------╯
+
+╭-----------------------------------------------------------+-----------------+--------+--------+--------+---------╮
+| test/mocks/MockMultiOwnable.sol:MockMultiOwnable Contract |                 |        |        |        |         |
++==================================================================================================================+
+| Deployment Cost                                           | Deployment Size |        |        |        |         |
+|-----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| 1024428                                                   | 4539            |        |        |        |         |
+|-----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+|                                                           |                 |        |        |        |         |
+|-----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| Function Name                                             | Min             | Avg    | Median | Max    | # Calls |
+|-----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| addOwnerAddress                                           | 24060           | 97790  | 99131  | 99131  | 107     |
+|-----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| addOwnerPublicKey                                         | 24250           | 121558 | 122504 | 122516 | 263     |
+|-----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| init                                                      | 25733           | 166314 | 209945 | 209945 | 30      |
+|-----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| isOwnerAddress                                            | 2930            | 2930   | 2930   | 2930   | 1       |
+|-----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| isOwnerBytes                                              | 2992            | 3071   | 3072   | 3072   | 259     |
+|-----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| isOwnerPublicKey                                          | 2786            | 2786   | 2786   | 2786   | 256     |
+|-----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| nextOwnerIndex                                            | 2506            | 2506   | 2506   | 2506   | 107     |
+|-----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| ownerAtIndex                                              | 3088            | 4802   | 4237   | 7646   | 4       |
+|-----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| ownerCount                                                | 4448            | 4448   | 4448   | 4448   | 201     |
+|-----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| removeLastOwner                                           | 29084           | 42288  | 43740  | 52725  | 6       |
+|-----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| removeOwnerAtIndex                                        | 24738           | 27561  | 24738  | 59315  | 618     |
+|-----------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| removedOwnersCount                                        | 2378            | 2378   | 2378   | 2378   | 101     |
+╰-----------------------------------------------------------+-----------------+--------+--------+--------+---------╯
+
+╭-----------------------------------------------+-----------------+------+--------+------+---------╮
+| test/mocks/MockTarget.sol:MockTarget Contract |                 |      |        |      |         |
++==================================================================================================+
+| Deployment Cost                               | Deployment Size |      |        |      |         |
+|-----------------------------------------------+-----------------+------+--------+------+---------|
+| 388508                                        | 1582            |      |        |      |         |
+|-----------------------------------------------+-----------------+------+--------+------+---------|
+|                                               |                 |      |        |      |         |
+|-----------------------------------------------+-----------------+------+--------+------+---------|
+| Function Name                                 | Min             | Avg  | Median | Max  | # Calls |
+|-----------------------------------------------+-----------------+------+--------+------+---------|
+| datahash                                      | 2274            | 2274 | 2274   | 2274 | 378     |
+╰-----------------------------------------------+-----------------+------+--------+------+---------╯
+
+
+Ran 18 test suites in 169.41ms (286.41ms CPU time): 81 tests passed, 0 failed, 0 skipped (81 total tests)

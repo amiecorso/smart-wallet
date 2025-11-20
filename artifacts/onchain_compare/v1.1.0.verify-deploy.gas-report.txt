@@ -1,0 +1,28 @@
+No files changed, compilation skipped
+
+Ran 1 test for test/gas/Verify_v06.t.sol:Verify_v06
+[FAIL: call to non-contract address 0x7fc98430eAEdbb6070B35B39D798725049088348] test_verificationGas_firstDeploy_simAndHandleOps() (gas: 173186)
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 105.41ms (679.29µs CPU time)
+
+╭-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------╮
+| test/mocks/MockCoinbaseSmartWallet.sol:MockCoinbaseSmartWallet Contract |                 |        |        |        |         |
++================================================================================================================================+
+| Deployment Cost                                                         | Deployment Size |        |        |        |         |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| 2631451                                                                 | 12967           |        |        |        |         |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+|                                                                         |                 |        |        |        |         |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| Function Name                                                           | Min             | Avg    | Median | Max    | # Calls |
+|-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| initialize                                                              | 191016          | 191016 | 191016 | 191016 | 1       |
+╰-------------------------------------------------------------------------+-----------------+--------+--------+--------+---------╯
+
+
+Ran 1 test suite in 106.44ms (105.41ms CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/gas/Verify_v06.t.sol:Verify_v06
+[FAIL: call to non-contract address 0x7fc98430eAEdbb6070B35B39D798725049088348] test_verificationGas_firstDeploy_simAndHandleOps() (gas: 173186)
+
+Encountered a total of 1 failing tests, 0 tests succeeded
