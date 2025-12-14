@@ -6,6 +6,8 @@ libs = ["lib"]
 [profile.deploy]
 optimizer = true
 optimizer_runs = 999999
+solc_version = "0.8.23"
+evm_version = "paris"
 
 [fmt]
 sort_imports = true
