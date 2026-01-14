@@ -78,11 +78,10 @@ Today, allowed are
 - MultiOwnable.removeOwnerAtIndex
 - UUPSUpgradeable.upgradeToAndCall
 
-## EIP-7702 warning (important)
-
 > [!WARNING]
+> ## EIP-7702 delegation safety
 > Do **not** directly delegate to a Coinbase Smart Wallet **implementation** contract via EIP-7702. Delegating directly to an implementation can create a security vulnerability.
->
+> 
 > Instead:
 > - Use the `EIP7702Proxy` pattern: [base/eip-7702-proxy](https://github.com/base/eip-7702-proxy)
 > - See Coinbase Developer Platform docs for further guidance and an example of performing a safe EIP-7702 upgrade: [EIP-7702 FAQs – safe upgrade](https://docs.cdp.coinbase.com/paymaster/need-to-knows/eip-7702-faqs#how-do-i-upgrade-my-wallet-to-7702)
